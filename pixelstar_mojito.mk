@@ -11,24 +11,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mojito device
 $(call inherit-product, device/xiaomi/mojito/device.mk)
 
-# Inherit some LineageOS stuffs
-$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+# Inherit some PixelStar stuffs
+$(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Maintainer name for Everest
-EVEREST_BUILD_TYPE := OFFICIAL
-EVEREST_MAINTAINER := K4LCHAKRA_&_ROMGHARTI
-
-# Build GAPPS\Vanilla
-WITH_GAPPS := true
-
-# Quick witch (add more than one Launcher in build)
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
+# PixelStar Flags
+PIXELSTAR_BUILD_TYPE := Unofficial
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+USE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_CLEAR_CALLING := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := everest_mojito
+PRODUCT_NAME := pixelstar_mojito
 PRODUCT_DEVICE := mojito
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10

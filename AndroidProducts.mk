@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/everest_mojito.mk
+    $(LOCAL_DIR)/pixelstar_mojito.mk
 
 COMMON_LUNCH_CHOICES := \
-    everest_mojito-user \
-    everest_mojito-userdebug \
-    everest_mojito-eng
+    pixelstar_mojito-user \
+    pixelstar_mojito-userdebug \
+    pixelstar_mojito-eng
